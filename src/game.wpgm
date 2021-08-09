@@ -1,0 +1,29 @@
+import wollok.game.*
+import player.*
+import config.*
+import enemigos.*
+import misiones.*
+import nave.*
+import vida.*
+import mainMenu.*
+
+program UNQgame {
+	
+	game.title("AmUNQ Us")
+	//Player
+	game.addVisual(player)
+ 	
+	//MainMenu
+	mainMenu.armarMenu()
+		
+	// CONFIGURACIONES
+	game.height(12)
+	game.width(12)
+	
+	// DEBUG
+	game.showAttributes(player)
+	
+	// START
+	game.start()
+	
+}
